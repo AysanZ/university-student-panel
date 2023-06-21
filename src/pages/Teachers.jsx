@@ -7,7 +7,7 @@ import {
   Search,
   Page,
 } from "@syncfusion/ej2-react-grids";
-import './style.css'
+import './styles/style.css'
 import { TeacherData, teacherGrid } from "../data/dummy";
 import { Header } from "../components";
 

@@ -523,13 +523,6 @@ export const chatData = [
   },
   {
     image:
-      avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
-    time: '4:39 AM',
-  },
-  {
-    image:
       avatar,
     message: 'Jolly completed tasks',
     desc: 'Assign her new tasks',

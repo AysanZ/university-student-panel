@@ -6,7 +6,7 @@ import {
 import { MdEmail, MdLanguage, MdLocationOn } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import { FaBuilding } from "react-icons/fa";
-import css from "./Profile.module.css";
+import css from "./styles/Profile.module.css";
 
 const Profile = () => {
   return (

@@ -1,0 +1,84 @@
+.wrapper {
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    width          : 100%;
+}
+
+.statistics {
+    align-items    : center;
+    display        : flex;
+    justify-content: space-between;
+    padding        : 50px 60px;
+    width          : 100%;
+}
+
+.static {
+    align-items     : center;
+    background-color: white;
+    border-radius   : 12px;
+    display         : flex;
+    height          : 100px;
+    justify-content : space-between;
+    padding         : 10px 20px;
+    width           : 22%;
+}
+
+.static>div {
+    display       : flex;
+    flex-direction: column;
+    font-weight   : 500;
+    gap           : 15px;
+}
+
+.static>div>:nth-child(2) {
+    font-size: 20px;
+}
+
+.container {
+    align-items     : start;
+    background-color: white;
+    border-radius   : 12px;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 30px;
+    justify-content : center;
+    padding         : 20px;
+    width           : 100%;
+}
+
+.header {
+    font-size  : 17px;
+    font-weight: 500;
+}
+
+.lesson {
+    align-items    : center;
+    display        : flex;
+    font-size      : 14px;
+    justify-content: space-between;
+    padding        : 10px;
+    width          : 100%;
+}
+
+.lesson>:nth-child(1) {
+    align-items    : center;
+    display        : flex;
+    gap            : 25px;
+    justify-content: center;
+}
+
+.lesson>:nth-child(1)>span {
+    align-items    : start;
+    display        : flex;
+    flex-direction : column;
+    gap            : 10px;
+    justify-content: center;
+}
+
+.lesson>:nth-child(1)>span>:nth-child(2) {
+    color    : var(--blue);
+    font-size: 12px;
+}
+
