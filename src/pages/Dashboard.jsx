@@ -10,21 +10,21 @@ function Dashboard() {
   return (
     <div className={css.wrapper}>
       <div className={css.statistics}>
-        <div className={css.static}>
+        <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.static}`}>
           <div>
             <span>All Courses</span>
             <span style={{ color: currentColor }}>04/06</span>
           </div>
           <img src="./images/dash1.svg" alt="student" />
         </div>
-        <div className={css.static}>
+        <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.static}`}>
           <div>
             <span>All Projects</span>
             <span style={{ color: currentColor }}>40/60</span>
           </div>
           <img src="./images/dash2.svg" alt="student" />
         </div>
-        <div className={css.static}>
+        <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.static}`}>
           <div>
             <span>Test Attended
 </span>
@@ -32,7 +32,7 @@ function Dashboard() {
           </div>
           <img src="./images/dash3.svg" alt="student" />
         </div>
-        <div className={css.static}>
+        <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.static}`}>
           <div>
             <span>Test Passed
 </span>

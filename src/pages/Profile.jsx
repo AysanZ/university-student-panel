@@ -11,7 +11,7 @@ import css from "./styles/Profile.module.css";
 const Profile = () => {
   return (
     <div className={css.wrapper}>
-      <div className={css.container}>
+      <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.container}`}>
         <div className={css.header}>
           <img src="./avatar2.jpg" alt="prof" />
           <span>

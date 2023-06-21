@@ -6,7 +6,7 @@ import css from './AddCardModal.module.css'
 
 const AddCardModal = ({ visible, onClose, handleCardAdd }) => {
     const customStyles = {
-        background: "white",
+        background: "bg-white dark:text-gray-200 dark:bg-secondary-dark-bg",
         padding: "20px",
         width: "50%",
         top: "-3rem",

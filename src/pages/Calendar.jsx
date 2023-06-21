@@ -20,7 +20,7 @@ const Scheduler = () => {
   };
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="App" title="Calendar" />
       <ScheduleComponent
         height="650px"
@@ -36,10 +36,10 @@ const Scheduler = () => {
       </ScheduleComponent>
       <PropertyPane>
         <table
-          style={{ width: '100%', background: 'white' }}
+          style={{ width: '100%' }}
         >
           <tbody>
-            <tr style={{ height: '50px' }}>
+            <tr style={{ height: '50px', }}>
               <td style={{ width: '100%' }}>
                 <DatePickerComponent
                   value={new Date(2021, 0, 10)}
