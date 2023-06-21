@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@asseinfo/react-kanban": "^2.2.0",
     "@syncfusion/ej2": "^19.4.48",
     "@syncfusion/ej2-react-calendars": "^19.4.48",
     "@syncfusion/ej2-react-charts": "^19.4.50",
@@ -13,11 +14,14 @@
     "@syncfusion/ej2-react-popups": "^19.4.52",
     "@syncfusion/ej2-react-richtexteditor": "^19.4.50",
     "@syncfusion/ej2-react-schedule": "^19.4.50",
+    "i": "^0.3.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "5.0.0"
+    "react-scripts": "5.0.0",
+    "rodal": "^2.0.1",
+    "zustand": "^4.3.8"
   },
   "scripts": {
     "start": "react-scripts start",
