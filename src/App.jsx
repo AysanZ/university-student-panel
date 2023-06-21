@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { Navbar, Sidebar, ThemeSettings } from "./components";
-import { Dashboard, Teachers, Calendar, Kanban, Editor, Profile, Transcript } from "./pages";
+import { Dashboard, Teachers, Calendar, Kanban, Editor, Profile, Transcript,Courses } from "./pages";
 import "./App.css";
 
 import { useStateContext } from "./contexts/ContextProvider";
@@ -75,6 +75,7 @@ const App = () => {
                 {/* pages  */}
                 <Route path="/teachers" element={<Teachers />} />
                 <Route path="/transcript" element={<Transcript />} />
+                <Route path="/Courses" element={<Courses />} />
                 <Route path="/profile" element={<Profile />} />
 
                 {/* apps  */}

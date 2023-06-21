@@ -6,7 +6,7 @@ import { BsFillCalendarEventFill } from "react-icons/bs";
 import { HiAcademicCap } from "react-icons/hi";
 import { FaChalkboardTeacher, FaBookReader, FaBuilding } from "react-icons/fa";
 import { BiColorFill } from 'react-icons/bi';
-import { MdSpaceDashboard, MdGrade } from "react-icons/md";
+import { MdSpaceDashboard, MdGrade,MdClass } from "react-icons/md";
 import { IoMdContacts } from 'react-icons/io';
 import { RiContactsLine, RiStockLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
@@ -479,9 +479,14 @@ export const links = [
         icon: <MdGrade size={20}/>,
       },
       {
+        name: 'Courses',
+        icon: <MdClass size={20}/>,
+      },
+      {
         name: 'Profile',
         icon: <BsFilePerson size={20}/>,
       },
+      
     ],
   },
   {

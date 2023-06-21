@@ -1,5 +1,5 @@
 import {create} from 'zustand'
-import {boardData} from './index'
+import {boardData} from '../data/index'
 
 const useBoard = create((set)=> ({
     board: boardData,
