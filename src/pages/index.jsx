@@ -7,4 +7,3 @@ export { default as Transcript } from "./Transcript";
 export { default as Profile } from "./Profile";
 export { default as Courses } from "./Courses";
 export { default as Subject } from "./Subject";
-

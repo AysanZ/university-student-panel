@@ -4,80 +4,51 @@ import {
   BsCalendarDateFill,
 } from "react-icons/bs";
 import { MdEmail, MdLanguage, MdLocationOn } from "react-icons/md";
+
+import { useStateContext } from "../contexts/ContextProvider";
+import {item} from '../contexts/personalDetails'
 import { MdEdit } from "react-icons/md";
 import { FaBuilding } from "react-icons/fa";
+import {data} from '../contexts/personalDetails'
 import css from "./styles/Profile.module.css";
+import { string } from "i/lib/util";
 
 const Profile = () => {
+  const { currentColor, currentMode } = useStateContext();
+
+  function detail (i) {
+    return Object.values(data)[i]
+  } 
+
   return (
     <div className={css.wrapper}>
-      <div className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.container}`}>
+      <div
+        className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.container}`}
+      >
         <div className={css.header}>
           <img src="./avatar2.jpg" alt="prof" />
           <span>
-            <span>Bruce Willis</span>
-            <span>Computer Science</span>
+            <span>{data.Name}</span>
+            <span>{data.Faculty}</span>
           </span>
         </div>
         <div className={css.main}>
           <div className={css.details}>
             <span className={css.head}>Personal Details :</span>
-            <div className={css.item}>
-              <BsFillPersonFill size={25} />
+            { item.map ((item, i) => (
+              <div className={css.item} style={{color: currentColor}}>
               <span>
-                <span>Name</span>
-                <span>Bruce Willis</span>
+                {item.icon}
+              </span>
+              <span>
+                <span> {item.title} </span>
+                <span> {detail(i)} </span>
               </span>
             </div>
-            <div className={css.item}>
-              <FaBuilding size={25} />
-              <span>
-                <span>Department</span>
-                <span>Computer Science</span>
-              </span>
-            </div>
-            <div className={css.item}>
-              <BsFillTelephoneFill size={25} />
-              <span>
-                <span>Mobile</span>
-                <span>+91 89657 48512</span>
-              </span>
-            </div>
-            <div className={css.item}>
-              <MdEmail size={25} />
-              <span>
-                <span>Email</span>
-                <span>daisy@gmail.com</span>
-              </span>
-            </div>
-            <div className={css.item}>
-              <BsFillPersonFill size={25} />
-              <span>
-                <span>Gender</span>
-                <span>Male</span>
-              </span>
-            </div>
-            <div className={css.item}>
-              <BsCalendarDateFill size={25} />
-              <span>
-                <span>Date of Birth</span>
-                <span>22 Apr 1995</span>
-              </span>
-            </div>
-            <div className={css.item}>
-              <MdLanguage size={25} />
-              <span>
-                <span>Language</span>
-                <span>English, French, Bangla</span>
-              </span>
-            </div>
-            <div className={css.item}>
-              <MdLocationOn size={25} />
-              <span>
-                <span>Address</span>
-                <span>480, Estern Avenue, New York</span>
-              </span>
-            </div>
+            ))
+
+            }
+            
           </div>
 
           <div className={css.about}>
@@ -102,7 +73,7 @@ const Profile = () => {
               Master of Science at Cdm College of Engineering and Technology,
               Pune.
             </p>
-            <MdEdit size={25} style={{marginTop: "30px", color: "#9185DF"}}/>
+            <MdEdit size={25} style={{ marginTop: "30px", color: "#9185DF" }} />
           </div>
         </div>
       </div>

@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
-import { ScheduleComponent, ViewsDirective, ViewDirective, Day, Week, WorkWeek, Month, Agenda, Inject, Resize, DragAndDrop } from '@syncfusion/ej2-react-schedule';
-import { DatePickerComponent } from '@syncfusion/ej2-react-calendars';
-import './styles/style.css'
-import { scheduleData } from '../data/dummy';
-import { Header } from '../components';
+import React, { useState } from "react";
+import {
+  ScheduleComponent,
+  ViewsDirective,
+  ViewDirective,
+  Day,
+  Week,
+  WorkWeek,
+  Month,
+  Agenda,
+  Inject,
+  Resize,
+  DragAndDrop,
+} from "@syncfusion/ej2-react-schedule";
+import { DatePickerComponent } from "@syncfusion/ej2-react-calendars";
+import "./styles/style.css";
+import { scheduleData } from "../data/dummy";
+import { Header } from "../components";
 
 const PropertyPane = (props) => <div className="mt-5">{props.children}</div>;
 
@@ -30,17 +42,19 @@ const Scheduler = () => {
         dragStart={onDragStart}
       >
         <ViewsDirective>
-          { ['Day', 'Week', 'WorkWeek', 'Month', 'Agenda'].map((item) => <ViewDirective key={item} option={item} />)}
+          {["Day", "Week", "WorkWeek", "Month", "Agenda"].map((item) => (
+            <ViewDirective key={item} option={item} />
+          ))}
         </ViewsDirective>
-        <Inject services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]} />
+        <Inject
+          services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}
+        />
       </ScheduleComponent>
-      <PropertyPane>
-        <table
-          style={{ width: '100%' }}
-        >
+      <PropertyPane> 
+        <table style={{ width: "100%"}}>
           <tbody>
-            <tr style={{ height: '50px', }}>
-              <td style={{ width: '100%' }}>
+            <tr style={{ height: "50px" }}>
+              <td style={{ width: "100%" }}>
                 <DatePickerComponent
                   value={new Date(2021, 0, 10)}
                   showClearButton={false}

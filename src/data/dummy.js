@@ -373,11 +373,10 @@ export const LinePrimaryXAxis = {
 };
 
 export const LinePrimaryYAxis = {
-  labelFormat: '{value}%',
   rangePadding: 'None',
-  minimum: 0,
-  maximum: 100,
-  interval: 20,
+  minimum: 12,
+  maximum: 20,
+  interval: 2,
   lineStyle: { width: 0 },
   majorTickLines: { width: 0 },
   minorTickLines: { width: 0 },
@@ -497,6 +496,9 @@ export const links = [
     ],
   },
 ];
+
+
+
 
 
 
@@ -696,19 +698,19 @@ export const medicalproBranding = {
 export const themeColors = [
   {
     name: 'blue-theme',
-    color: '#5586FF',
+    color: '#23A9F2',
   },
   {
     name: 'green-theme',
-    color: '#21A099',
+    color: '#1CD150',
   },
   {
     name: 'purple-theme',
-    color: '#7D3AF9',
+    color: '#9185DF',
   },
   {
     name: 'red-theme',
-    color: '#FF5C8E',
+    color: '#E74134',
   },
   {
     name: 'indigo-theme',
@@ -1759,33 +1761,24 @@ export const scheduleData = [
 
 export const lineChartData = [
   [
-    { x: new Date(2005, 0, 1), y: 21 },
-    { x: new Date(2006, 0, 1), y: 24 },
-    { x: new Date(2007, 0, 1), y: 36 },
-    { x: new Date(2008, 0, 1), y: 38 },
-    { x: new Date(2009, 0, 1), y: 54 },
-    { x: new Date(2010, 0, 1), y: 57 },
-    { x: new Date(2011, 0, 1), y: 70 },
+    { x: new Date(2005, 0, 1), y: 12 },
+    { x: new Date(2006, 0, 1), y: 14 },
+    { x: new Date(2007, 0, 1), y: 17 },
+    { x: new Date(2008, 0, 1), y: 14 },
+    { x: new Date(2009, 0, 1), y: 15 },
+    { x: new Date(2010, 0, 1), y: 18 },
+    { x: new Date(2011, 0, 1), y: 18 },
   ],
   [
-    { x: new Date(2005, 0, 1), y: 28 },
-    { x: new Date(2006, 0, 1), y: 44 },
-    { x: new Date(2007, 0, 1), y: 48 },
-    { x: new Date(2008, 0, 1), y: 50 },
-    { x: new Date(2009, 0, 1), y: 66 },
-    { x: new Date(2010, 0, 1), y: 78 },
-    { x: new Date(2011, 0, 1), y: 84 },
+    { x: new Date(2005, 0, 1), y: 14 },
+    { x: new Date(2006, 0, 1), y: 14.5 },
+    { x: new Date(2007, 0, 1), y: 16 },
+    { x: new Date(2008, 0, 1), y: 15 },
+    { x: new Date(2009, 0, 1), y: 15.5 },
+    { x: new Date(2010, 0, 1), y: 16 },
+    { x: new Date(2011, 0, 1), y: 16 },
   ],
 
-  [
-    { x: new Date(2005, 0, 1), y: 10 },
-    { x: new Date(2006, 0, 1), y: 20 },
-    { x: new Date(2007, 0, 1), y: 30 },
-    { x: new Date(2008, 0, 1), y: 39 },
-    { x: new Date(2009, 0, 1), y: 50 },
-    { x: new Date(2010, 0, 1), y: 70 },
-    { x: new Date(2011, 0, 1), y: 100 },
-  ],
 ];
 export const dropdownData = [
   {
@@ -1813,23 +1806,15 @@ export const lineCustomSeries = [
   { dataSource: lineChartData[0],
     xName: 'x',
     yName: 'y',
-    name: 'Germany',
+    name: 'Student GPA',
     width: '2',
-    marker: { visible: true, width: 10, height: 10 },
+    marker: { visible: true, width: 10, height: 10},
     type: 'Line' },
 
   { dataSource: lineChartData[1],
     xName: 'x',
     yName: 'y',
-    name: 'England',
-    width: '2',
-    marker: { visible: true, width: 10, height: 10 },
-    type: 'Line' },
-
-  { dataSource: lineChartData[2],
-    xName: 'x',
-    yName: 'y',
-    name: 'India',
+    name: 'University',
     width: '2',
     marker: { visible: true, width: 10, height: 10 },
     type: 'Line' },

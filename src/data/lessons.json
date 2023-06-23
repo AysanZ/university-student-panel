@@ -2,21 +2,21 @@
     {
         "course": "Physics",
         "time": "8:00",
-        "class": "a"
+        "class": "A"
     },
     {
-        "course": "Physics",
-        "time": "8:00",
-        "class": "a"
+        "course": "Mathmatics",
+        "time": "10:00",
+        "class": "C"
     },
     {
-        "course": "Physics",
-        "time": "8:00",
-        "class": "a"
+        "course": "PHP",
+        "time": "14:00",
+        "class": "F"
     },
     {
-        "course": "Physics",
-        "time": "8:00",
-        "class": "a"
+        "course": "Algorithms",
+        "time": "16:00",
+        "class": "B"
     }
 ]

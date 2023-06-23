@@ -72,12 +72,12 @@ const Navbar = () => {
           color={currentColor}
           icon={<BsChatLeft size={20} />}
         />
-        <div style={{width: '30px'}}></div>
+        <div style={{ width: "30px" }}></div>
         <TooltipComponent content="Profile" position="BottomCenter">
           <div
             className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"
             onClick={() => handleClick("userProfile")}
-            style={{marginRight: "30px"}}
+            style={{ marginRight: "30px" }}
           >
             <img
               className="rounded-full w-8 h-8"

@@ -4,7 +4,17 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { Navbar, Sidebar, ThemeSettings } from "./components";
-import { Dashboard, Teachers, Calendar, Kanban, Editor, Profile, Transcript,Courses,Subject } from "./pages";
+import {
+  Dashboard,
+  Teachers,
+  Calendar,
+  Kanban,
+  Editor,
+  Profile,
+  Transcript,
+  Courses,
+  Subject,
+} from "./pages";
 import "./App.css";
 
 import { useStateContext } from "./contexts/ContextProvider";
