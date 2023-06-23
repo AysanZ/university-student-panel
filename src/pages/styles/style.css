@@ -51,12 +51,18 @@
     background-color: #7D3AF9 !important;
 }
 
-.e-grid .e-headercell, .e-grid .e-detailheadercell, .e-toolbar .e-tbar-btn,.e-schedule .e-schedule-toolbar .e-toolbar-items,.e-toolbar .e-toolbar-items ,.e-toolbar{
+.e-grid .e-headercell,
+.e-grid .e-detailheadercell,
+.e-toolbar .e-tbar-btn,
+.e-schedule .e-schedule-toolbar .e-toolbar-items,
+.e-toolbar .e-toolbar-items,
+.e-toolbar {
     background-color: #E6E4F8 !important;
 }
 
-.e-schedule .e-vertical-view .e-work-cells, .e-grid .e-detailheadercell, .e-schedule .e-vertical-view .e-work-cells    {
+.e-schedule .e-vertical-view .e-work-cells,
+.e-grid .e-detailheadercell,
+.e-schedule .e-vertical-view .e-work-cells {
     background-color: #ffffff !important;
 
 }
-

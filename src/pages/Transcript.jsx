@@ -12,7 +12,6 @@ import {
   PdfExport,
   Inject,
 } from "@syncfusion/ej2-react-grids";
-
 import {
   transcriptData,
   contextMenuItems,
@@ -21,10 +20,13 @@ import {
 import { Header } from "../components";
 
 const Transcript = () => {
+
   const editing = { allowDeleting: false, allowEditing: false };
+
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="Page" title="Transcript" />
+
       <GridComponent
         id="gridcomp"
         dataSource={transcriptData}
@@ -35,11 +37,13 @@ const Transcript = () => {
         contextMenuItems={contextMenuItems}
         editSettings={editing}
       >
+
         <ColumnsDirective>
           {transcriptGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
+        
         <Inject
           services={[
             Resize,

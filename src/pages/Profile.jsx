@@ -1,24 +1,15 @@
-import {
-  BsFillPersonFill,
-  BsFillTelephoneFill,
-  BsCalendarDateFill,
-} from "react-icons/bs";
-import { MdEmail, MdLanguage, MdLocationOn } from "react-icons/md";
-
 import { useStateContext } from "../contexts/ContextProvider";
-import {item} from '../contexts/personalDetails'
+import { item } from "../contexts/personalDetails";
 import { MdEdit } from "react-icons/md";
-import { FaBuilding } from "react-icons/fa";
-import {data} from '../contexts/personalDetails'
+import { data } from "../contexts/personalDetails";
 import css from "./styles/Profile.module.css";
-import { string } from "i/lib/util";
 
 const Profile = () => {
   const { currentColor, currentMode } = useStateContext();
 
-  function detail (i) {
-    return Object.values(data)[i]
-  } 
+  function detail(i) {
+    return Object.values(data)[i];
+  }
 
   return (
     <div className={css.wrapper}>
@@ -26,33 +17,37 @@ const Profile = () => {
         className={`bg-white dark:text-gray-200 dark:bg-secondary-dark-bg ${css.container}`}
       >
         <div className={css.header}>
-          <img src="./avatar2.jpg" alt="prof" />
+          <img
+            src="./avatar2.jpg"
+            alt="prof"
+            style={{ border: `3px solid ${currentColor}` }}
+          />
+
           <span>
             <span>{data.Name}</span>
             <span>{data.Faculty}</span>
           </span>
         </div>
+
         <div className={css.main}>
           <div className={css.details}>
             <span className={css.head}>Personal Details :</span>
-            { item.map ((item, i) => (
-              <div className={css.item} style={{color: currentColor}}>
-              <span>
-                {item.icon}
-              </span>
-              <span>
-                <span> {item.title} </span>
-                <span> {detail(i)} </span>
-              </span>
-            </div>
-            ))
 
-            }
-            
+            {item.map((item, i) => (
+              <div className={css.item} style={{ color: currentColor }}>
+                <span>{item.icon}</span>
+
+                <span>
+                  <span> {item.title} </span>
+                  <span> {detail(i)} </span>
+                </span>
+              </div>
+            ))}
           </div>
 
           <div className={css.about}>
             <span className={css.head}>About Me</span>
+
             <p>
               <p>Hello I am Daisy Parks</p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -73,6 +68,7 @@ const Profile = () => {
               Master of Science at Cdm College of Engineering and Technology,
               Pune.
             </p>
+            
             <MdEdit size={25} style={{ marginTop: "30px", color: "#9185DF" }} />
           </div>
         </div>
@@ -80,5 +76,4 @@ const Profile = () => {
     </div>
   );
 };
-
 export default Profile;

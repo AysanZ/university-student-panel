@@ -23,7 +23,7 @@ const Sidebar = () => {
   return (
     <div
       className=" h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10"
-      style={{ borderRight: "0.1px solid rgba(0,0,0,0.1)"}}
+      style={{ borderRight: "0.1px solid rgba(0,0,0,0.1)" }}
     >
       {activeMenu && (
         <>
@@ -38,6 +38,7 @@ const Sidebar = () => {
                 style={{ width: "130px", marginLeft: "50px" }}
               />
             </Link>
+
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
                 type="button"
@@ -49,15 +50,18 @@ const Sidebar = () => {
               </button>
             </TooltipComponent>
           </div>
+
           <div className="mt-10 ">
             {links.map((item) => (
               <div key={item.title}>
+
                 <p
                   className="text-gray-400 dark:text-gray-400 m-3 mt-4 uppercase"
                   style={{ fontSize: "14px" }}
                 >
                   {item.title}
                 </p>
+
                 {item.links.map((link) => (
                   <NavLink
                     to={`/${link.name}`}

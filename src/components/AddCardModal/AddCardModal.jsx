@@ -12,6 +12,7 @@ const AddCardModal = ({ visible, onClose, handleCardAdd }) => {
     height: "fit-content",
     maxWidth: "40rem",
   };
+
   const [title, setTitle] = React.useState("");
   const [detail, setDetail] = React.useState("");
 

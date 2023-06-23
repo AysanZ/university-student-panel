@@ -6,6 +6,21 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius   : 0px;
+    width           : 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    width           : 0px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

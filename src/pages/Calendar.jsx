@@ -34,6 +34,7 @@ const Scheduler = () => {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="App" title="Calendar" />
+
       <ScheduleComponent
         height="650px"
         ref={(schedule) => setScheduleObj(schedule)}
@@ -46,12 +47,14 @@ const Scheduler = () => {
             <ViewDirective key={item} option={item} />
           ))}
         </ViewsDirective>
+        
         <Inject
           services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}
         />
       </ScheduleComponent>
-      <PropertyPane> 
-        <table style={{ width: "100%"}}>
+
+      <PropertyPane>
+        <table style={{ width: "100%" }}>
           <tbody>
             <tr style={{ height: "50px" }}>
               <td style={{ width: "100%" }}>

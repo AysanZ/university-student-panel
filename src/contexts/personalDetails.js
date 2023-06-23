@@ -43,7 +43,8 @@ export const item = [
 ]
 
 export const data =
-   { Name : "Bruce Willis",
+   { src : "./avatar2.jpg",
+    Name : "Bruce Willis",
     Faculty: "Computer Science",
     Mobile: "+91 89657 48512",
     Email: "daisy@gmail.com",

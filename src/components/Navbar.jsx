@@ -38,11 +38,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
-
     window.addEventListener("resize", handleResize);
-
     handleResize();
-
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -64,6 +61,7 @@ const Navbar = () => {
         color={currentColor}
         icon={<AiOutlineMenu />}
       />
+
       <div className="flex">
         <NavButton
           title="Chat"
@@ -72,7 +70,9 @@ const Navbar = () => {
           color={currentColor}
           icon={<BsChatLeft size={20} />}
         />
+
         <div style={{ width: "30px" }}></div>
+
         <TooltipComponent content="Profile" position="BottomCenter">
           <div
             className="flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg"

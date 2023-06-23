@@ -15,18 +15,20 @@ import {
   ExcelExport,
   PdfExport,
 } from "@syncfusion/ej2-react-grids";
-
 import { subjectData, subjectGrid, contextMenuItems } from "../data/dummy";
 import { Header } from "../components";
 
 const Subject = () => {
   const selectionsettings = { persistSelection: false };
+
   const toolbarOptions = ["Delete"];
+
   const editing = { allowDeleting: true, allowEditing: false };
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="Page" title="Subjects" />
+
       <GridComponent
         dataSource={subjectData}
         allowExcelExport
@@ -40,11 +42,13 @@ const Subject = () => {
         editSettings={editing}
         allowSorting
       >
+
         <ColumnsDirective>
           {subjectGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
+        
         <Inject
           services={[
             Page,

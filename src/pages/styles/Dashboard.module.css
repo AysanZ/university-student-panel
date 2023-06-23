@@ -2,10 +2,10 @@
     align-items    : start;
     display        : flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap      : wrap;
     width          : 100%;
     padding        : 50px 60px;
-    gap: 70px;
+    gap            : 70px;
 
 }
 
@@ -53,27 +53,27 @@
 
 
 .header {
-    font-size  : 17px;
-    font-weight: 500;
+    font-size    : 17px;
+    font-weight  : 500;
     margin-bottom: 20px;
 }
 
 .lesson {
     align-items    : center;
-    font-size      : 14px;
-    padding        : 10px;
-    width          : 100%;
     align-items    : start;
     display        : flex;
+    flex-wrap      : wrap;
+    font-size      : 14px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding        : 10px;
+    width          : 100%;
 }
 
 .lesson>:nth-child(1) {
-    padding: 7px;
     border-radius: 5px;
-    color: white;
-    font-weight: 500;
+    color        : white;
+    font-weight  : 500;
+    padding      : 7px;
 }
 
 .lesson>:nth-child(2) {
@@ -81,12 +81,11 @@
     display        : flex;
     gap            : 10px;
     justify-content: center;
-    color: black;
+    color          : black;
 }
 
 .lesson>:nth-child(2)>span {
     background-color: rgb(230, 228, 248);
-    padding: 5px 10px;
-    border-radius: 5px;
+    border-radius   : 5px;
+    padding         : 5px 10px;
 }
-

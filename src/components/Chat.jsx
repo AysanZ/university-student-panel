@@ -1,6 +1,5 @@
 import React from "react";
 import { MdOutlineCancel } from "react-icons/md";
-
 import { Button } from ".";
 import { chatData } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
@@ -13,6 +12,7 @@ const Chat = () => {
       <div className="flex justify-between items-center">
         <div className="flex gap-3">
           <p className="font-semibold text-lg dark:text-gray-200">Messages</p>
+
           <button
             type="button"
             className="text-white  text-xs rounded p-1 px-2 bg-orange"
@@ -20,6 +20,7 @@ const Chat = () => {
             5 New
           </button>
         </div>
+
         <Button
           icon={<MdOutlineCancel />}
           color="rgb(153, 171, 180)"
@@ -27,6 +28,7 @@ const Chat = () => {
           borderRadius="50%"
         />
       </div>
+
       <div className="mt-5 ">
         {chatData?.map((item, index) => (
           <div
@@ -44,6 +46,7 @@ const Chat = () => {
                 className="absolute inline-flex rounded-full h-2 w-2 right-0 -top-1"
               />
             </div>
+            
             <div>
               <p className="font-semibold dark:text-gray-200 ">
                 {item.message}
@@ -57,6 +60,7 @@ const Chat = () => {
             </div>
           </div>
         ))}
+        
         <div className="mt-5">
           <Button
             color="white"

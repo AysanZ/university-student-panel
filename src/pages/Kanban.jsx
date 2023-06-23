@@ -65,6 +65,7 @@ const Kanban = () => {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-3xl">
       <Header category="App" title="Kanban" />
+
       <div className="board-container">
         <Board
           allowAddColumn
@@ -76,6 +77,7 @@ const Kanban = () => {
             <div className="kanban-card" style={getGradient(props)}>
               <div>
                 <span>{props.title}</span>
+                
                 <button
                   className="remove-button"
                   type="button"
@@ -89,8 +91,10 @@ const Kanban = () => {
                   }}
                 >
                   <RxCross2 color="white" size={15} />
+
                 </button>
               </div>
+
               <span>{props.description}</span>
             </div>
           )}
@@ -117,6 +121,7 @@ const Kanban = () => {
                   title="Add card"
                   onClick={() => setModalOpened(true)}
                 />
+
                 <AddCardModal
                   visible={modalOpened}
                   handleCardAdd={handleCardAdd}
@@ -126,6 +131,7 @@ const Kanban = () => {
             );
           }}
         >
+          
           {board}
         </Board>
       </div>

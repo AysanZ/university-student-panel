@@ -27,19 +27,19 @@
 }
 
 .kanban-card {
-    width         : 100%;
+    border-radius : 2.5px;
     display       : flex;
     flex-direction: column;
-    padding       : 1rem;
     gap           : 1.5rem;
     margin-top    : 1.2rem;
-    border-radius : 2.5px;
+    padding       : 1rem;
+    width         : 100%;
 }
 
 .kanban-card>:nth-child(1) {
-    width          : 100%;
     display        : flex;
     justify-content: space-between;
+    width          : 100%;
 }
 
 .remove-button {
@@ -49,10 +49,10 @@
 }
 
 .column-header {
-    width          : 100%;
     display        : flex;
     justify-content: space-between;
     padding        : 0px 8px;
+    width          : 100%;
 }
 
 .column-header>svg {
