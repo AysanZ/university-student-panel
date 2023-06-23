@@ -77,12 +77,12 @@ const subjectGridImage = (props) => (
   <div className="image flex gap-4">
     <img
       className="rounded-full w-10 h-10"
-      src={props.subjectImage}
+      src={props.tImage}
       alt="teacher"
     />
     <div>
-      <p>{props.subjectName}</p>
-      <p>{props.subjectEmail}</p>
+      <p>{props.tName}</p>
+      <p>{props.tEmail}</p>
     </div>
   </div>
 );
@@ -162,8 +162,6 @@ export const subjectGrid = [
     width: '150',
     template: subjectGridImage,
     textAlign: 'Center' },
-
-
 ];
 
 export const teacherGrid = [
@@ -439,45 +437,65 @@ export const TeacherData = [
 ]
 
 export const subjectData = [
-  {
-    teacherID: 3,
-    Name: 'Iulia Albu',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    teacherImage:
-      avatar4,
-  },
-  {
-    teacherID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    teacherImage:
+  { 
+    id: 10248,
+    subject: 'PHP',
+    credit: 3,
+    tEmail: 'daisy@gmail.com',
+    tId: 'E74134',
+    tName: "Tanha",
+    tImage:
       avatar2,
   },
-  {
-    teacherID: 5,
-    Name: 'Omar Darobe',
-    Title: 'HR',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    teacherImage:
-      avatar,
+  { 
+    id: 10248,
+    subject: 'PHP',
+    credit: 3,
+    tEmail: 'daisy@gmail.com',
+    tId: 'E74134',
+    tName: "Tanha",
+    tImage:
+      avatar3,
   },
-  {
-    teacherID: 4,
-    Name: 'Siegbert Gottfried',
-    Title: 'Marketing Head',
-    HireDate: '01/02/2021',
-    Country: 'USA',
-    ReportsTo: 'Carson',
-    teacherImage:
-      avatar2,
+  { 
+    id: 10248,
+    subject: 'PHP',
+    credit: 3,
+    tEmail: 'daisy@gmail.com',
+    tId: 'E74134',
+    tName: "Tanha",
+    tImage:
+      avatar3,
+  },
+  { 
+    id: 10248,
+    subject: 'PHP',
+    credit: 3,
+    tEmail: 'daisy@gmail.com',
+    tId: 'E74134',
+    tName: "Tanha",
+    tImage:
+      avatar3,
+  },
+  { 
+    id: 10248,
+    subject: 'PHP',
+    credit: 3,
+    tEmail: 'daisy@gmail.com',
+    tId: 'E74134',
+    tName: "Tanha",
+    tImage:
+      avatar3,
+  },
+  { 
+    id: 10248,
+    subject: 'PHP',
+    credit: 3,
+    tEmail: 'daisy@gmail.com',
+    tId: 'E74134',
+    tName: "Tanha",
+    tImage:
+      avatar3,
   },
 
 

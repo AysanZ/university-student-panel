@@ -43,7 +43,7 @@ export const item = [
 ]
 
 export const data =
-   { src : "./avatar2.jpg",
+   { 
     Name : "Bruce Willis",
     Faculty: "Computer Science",
     Mobile: "+91 89657 48512",
@@ -51,7 +51,8 @@ export const data =
     Gender: "Male",
     DOB: "22 Apr 1995",
     Language: "English, French, Bangla",
-    Address: "480, Estern Avenue, New York"
+    Address: "480, Estern Avenue, New York",
+    src : "./avatar2.jpg",
     }
  
    
