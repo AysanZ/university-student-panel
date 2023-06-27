@@ -21,7 +21,7 @@ const LineChart = () => {
 
   return (
     <div
-      className="bg-white dark:bg-secondary-dark-bg"
+      className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg"
       style={{ padding: "20px", borderRadius: "7px", width: "58%" }}
     >
       <span style={{ fontSize: "17px", fontWeight: "500" }}>GPA</span>

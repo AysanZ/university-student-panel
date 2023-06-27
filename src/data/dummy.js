@@ -4,6 +4,7 @@ import { BsKanban, BsFilePerson } from 'react-icons/bs';
 import { BsFillCalendarEventFill } from "react-icons/bs";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { MdSpaceDashboard, MdGrade,MdClass } from "react-icons/md";
+import {FiLogOut} from 'react-icons/fi'
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
 import avatar3 from './avatar3.png';
@@ -231,6 +232,7 @@ export const links = [
       },
       
     ],
+
   },
   {
     title: 'Apps',
@@ -247,6 +249,11 @@ export const links = [
         name: 'editor',
         icon: <AiFillEdit size={20}/>,
       },
+      {
+        name: 'log out',
+        icon: <FiLogOut />
+       
+      }
       
     ],
   },

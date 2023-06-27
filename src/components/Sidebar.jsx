@@ -22,8 +22,8 @@ const Sidebar = () => {
 
   return (
     <div
-      className=" h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10"
-      style={{ borderRight: "0.1px solid rgba(0,0,0,0.1)" }}
+      className=" h-screen pb-10"
+      style={{ borderRight: "0.1px solid rgba(0,0,0,0.1)", overflowY: "hidden", overflowX: "hidden"}}
     >
       {activeMenu && (
         <>
